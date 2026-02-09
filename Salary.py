@@ -4,18 +4,8 @@ class Salary:
         self.allowance = allowance
 
     def calculate_net_salary(self):
-        return self.basic + self.allowance    
-
-basic = input("Enter Basic Salary: ")
-if basic.replace(".","").isdigit():
-    basic =float(basic)
-
-    
-allowance = input("Enter Allowance: ")   
-if allowance.replace(".","").isdigit():
-    allowance =float(allowance)
-
-sal = Salary(basic, allowance)  
-print(sal.basic) 
-print(sal.calculate_net_salary()) 
-sal_1 = Salary(3000, 500)  
+        net_salary = self.basic + self.allowance 
+        return  net_salary
+      
+def __str__(self):
+    return "basic : "+ str(self.basic) + " allowance : "+ str(self.allowance) + "net salary"+ str(self.calculate_net_salary())

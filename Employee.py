@@ -7,12 +7,7 @@ class Employee:
         self.designation = designation
         self.Status = Status.Active
 
-name = "wara"        
-ID = 1234
-department = "it"  
-designation = "ceo"
-status = ""
 
-emp = Employee(name,ID,department,designation,)
-emp_1 = Employee("nimal",134,"hr","manager",)
+
+
 
